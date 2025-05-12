@@ -9,6 +9,10 @@ import java.time.Instant;
 public class TimerLog {
 
     public static void main(String[] args) {
+        manualTimeExtraction();
+    }
+
+    private static void manualTimeExtraction() {
         var myIncDec = new MyIncDec(5);
         var start = Instant.now();
         myIncDec.increment();
@@ -21,6 +25,6 @@ public class TimerLog {
         end = Instant.now();
         duration = Duration.between(start, end);
         log.info("Decrement took {} nanos", duration.toNanos());
-
     }
+
 }
