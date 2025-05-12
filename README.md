@@ -27,7 +27,7 @@ boolean checkStudy(Student student){
     return student.isLoggedIn()  
     && "Lee".equals(student.getTeacherName()) 
     && student.isEnrolledInMaths() 
-    && student.hasDisction();
+    && student.hasDisctinction();
 }
 ```
 
